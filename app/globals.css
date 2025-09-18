@@ -3,76 +3,76 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* === Blue & White Theme Tokens === */
 :root {
-  /* Updated design tokens for humanitarian campaign theme */
-  --background: oklch(0.98 0.005 120); /* Light neutral background */
-  --foreground: oklch(0.2 0.01 240); /* Dark text for readability */
-  --card: oklch(1 0 0); /* White cards */
-  --card-foreground: oklch(0.35 0.01 240); /* Text color for cards */
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.2 0.01 240);
-  --primary: oklch(0.45 0.15 160); /* Emerald green for hope/growth */
-  --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(0.35 0.01 240); /* Calm secondary color */
-  --secondary-foreground: oklch(1 0 0);
-  --muted: oklch(0.96 0.005 120);
-  --muted-foreground: oklch(0.2 0.01 240);
-  --accent: oklch(0.55 0.15 160); /* Brighter accent for urgency */
-  --accent-foreground: oklch(1 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(1 0 0);
-  --border: oklch(0.85 0.01 240);
-  --input: oklch(1 0 0);
-  --ring: oklch(0.45 0.15 160);
-  --chart-1: oklch(0.45 0.15 160);
-  --chart-2: oklch(0.55 0.15 160);
-  --chart-3: oklch(0.65 0.12 50);
-  --chart-4: oklch(0.6 0.2 25);
-  --chart-5: oklch(0.5 0.2 260);
+  --background: #ffffff; /* white background */
+  --foreground: #1e3a8a; /* dark blue text */
+  --card: #ffffff; /* white cards */
+  --card-foreground: #1e3a8a; /* text on cards */
+  --popover: #ffffff;
+  --popover-foreground: #1e3a8a;
+  --primary: #2563eb; /* primary blue for buttons/links */
+  --primary-foreground: #ffffff; /* text on primary buttons */
+  --secondary: #3b82f6; /* lighter blue */
+  --secondary-foreground: #ffffff;
+  --muted: #f0f4ff; /* light muted background */
+  --muted-foreground: #1e3a8a;
+  --accent: #60a5fa; /* accent blue for highlights */
+  --accent-foreground: #ffffff;
+  --destructive: #ef4444; /* red for destructive actions */
+  --destructive-foreground: #ffffff;
+  --border: #dbeafe;
+  --input: #ffffff;
+  --ring: #2563eb;
+  --chart-1: #2563eb;
+  --chart-2: #3b82f6;
+  --chart-3: #60a5fa;
+  --chart-4: #93c5fd;
+  --chart-5: #bfdbfe;
   --radius: 0.5rem;
-  --sidebar: oklch(1 0 0);
-  --sidebar-foreground: oklch(0.2 0.01 240);
-  --sidebar-primary: oklch(0.45 0.15 160);
-  --sidebar-primary-foreground: oklch(1 0 0);
-  --sidebar-accent: oklch(0.55 0.15 160);
-  --sidebar-accent-foreground: oklch(1 0 0);
-  --sidebar-border: oklch(0.85 0.01 240);
-  --sidebar-ring: oklch(0.45 0.15 160);
+  --sidebar: #ffffff;
+  --sidebar-foreground: #1e3a8a;
+  --sidebar-primary: #2563eb;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #3b82f6;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #dbeafe;
+  --sidebar-ring: #2563eb;
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.145 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.145 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.55 0.15 160);
-  --primary-foreground: oklch(0.145 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.65 0.15 160);
-  --accent-foreground: oklch(0.145 0 0);
-  --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.269 0 0);
-  --input: oklch(0.269 0 0);
-  --ring: oklch(0.55 0.15 160);
-  --chart-1: oklch(0.55 0.15 160);
-  --chart-2: oklch(0.65 0.15 160);
-  --chart-3: oklch(0.75 0.12 50);
-  --chart-4: oklch(0.7 0.2 25);
-  --chart-5: oklch(0.6 0.2 260);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.55 0.15 160);
-  --sidebar-primary-foreground: oklch(0.145 0 0);
-  --sidebar-accent: oklch(0.65 0.15 160);
-  --sidebar-accent-foreground: oklch(0.145 0 0);
-  --sidebar-border: oklch(0.269 0 0);
-  --sidebar-ring: oklch(0.55 0.15 160);
+  --background: #1e3a8a; /* dark blue background */
+  --foreground: #ffffff; /* white text */
+  --card: #1e40af;
+  --card-foreground: #ffffff;
+  --popover: #1e40af;
+  --popover-foreground: #ffffff;
+  --primary: #60a5fa;
+  --primary-foreground: #1e3a8a;
+  --secondary: #3b82f6;
+  --secondary-foreground: #ffffff;
+  --muted: #1e40af;
+  --muted-foreground: #ffffff;
+  --accent: #2563eb;
+  --accent-foreground: #ffffff;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #3b82f6;
+  --input: #1e40af;
+  --ring: #60a5fa;
+  --chart-1: #2563eb;
+  --chart-2: #3b82f6;
+  --chart-3: #60a5fa;
+  --chart-4: #93c5fd;
+  --chart-5: #bfdbfe;
+  --sidebar: #1e3a8a;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #60a5fa;
+  --sidebar-primary-foreground: #1e3a8a;
+  --sidebar-accent: #3b82f6;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #2563eb;
+  --sidebar-ring: #60a5fa;
 }
 
 @theme inline {
@@ -125,12 +125,12 @@
   }
 }
 
-/* Added smooth scrolling for navigation */
+/* Smooth scrolling for navigation */
 html {
   scroll-behavior: smooth;
 }
 
-/* Added custom animations for campaign elements */
+/* Custom animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
