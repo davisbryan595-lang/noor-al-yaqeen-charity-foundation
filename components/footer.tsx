@@ -5,7 +5,7 @@ import { Phone, Mail, MapPin, Facebook, Instagram, Twitter, Linkedin } from "luc
 
 export function Footer() {
   return (
-    <footer className="bg-secondary text-secondary-foreground py-12">
+    <footer className="bg-white text-foreground py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
@@ -56,22 +56,22 @@ export function Footer() {
             <h4 className="text-lg font-semibold">Follow Us</h4>
             <div className="flex space-x-4">
               <a href="#" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
-                <Facebook className="w-6 h-6" />
+                <Facebook className="w-6 h-6 text-primary" />
               </a>
               <a href="#" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
-                <Instagram className="w-6 h-6" />
+                <Instagram className="w-6 h-6 text-primary" />
               </a>
               <a href="#" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
-                <Twitter className="w-6 h-6" />
+                <Twitter className="w-6 h-6 text-primary" />
               </a>
               <a href="#" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
-                <Linkedin className="w-6 h-6" />
+                <Linkedin className="w-6 h-6 text-primary" />
               </a>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-secondary-foreground/20 mt-8 pt-8 text-center">
+        <div className="border-t border-muted-foreground/30 mt-8 pt-8 text-center">
           <p className="text-sm opacity-90">© 2025 Haul Boyz Junk Removal. All rights reserved. | We Clear It All!</p>
         </div>
       </div>
