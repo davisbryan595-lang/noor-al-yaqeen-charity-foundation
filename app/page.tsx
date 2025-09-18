@@ -4,6 +4,7 @@ import { AboutSection } from "@/components/about-section"
 import { ImpactSection } from "@/components/impact-section"
 import { DonationSection } from "@/components/donation-section"
 import { Navigation } from "@/components/navigation"
+import { Footer } from "@/components/footer"
 
 export default function CampaignPage() {
   return (
@@ -14,6 +15,7 @@ export default function CampaignPage() {
       <AboutSection />
       <ImpactSection />
       <DonationSection />
+      <Footer />
     </main>
   )
 }
