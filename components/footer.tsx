@@ -1,79 +1,57 @@
 "use client"
 
-import Image from "next/image"
-import { Phone, Mail, MapPin, Facebook, Instagram, Twitter, Linkedin } from "lucide-react"
+import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa"
 
 export function Footer() {
   return (
-    <footer className="bg-white text-foreground py-12">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Company Info */}
-          <div className="space-y-4">
-            <div className="flex items-center space-x-3">
-              <Image
-                src="/logo.png"
-                alt="Haul Boyz Junk Removal"
-                width={40}
-                height={40}
-                className="rounded-lg"
-              />
-              <div>
-                <h3 className="text-xl font-bold">Haul Boyz</h3>
-                <p className="text-sm opacity-90">Junk Removal</p>
-              </div>
-            </div>
-            <p className="text-sm opacity-90 text-pretty">
-              Professional junk removal services in Hamilton City, Indianapolis. We clear it all with eco-friendly disposal practices.
-            </p>
-          </div>
-
-          {/* Contact Info */}
-          <div className="space-y-4">
-            <h4 className="text-lg font-semibold">Contact Information</h4>
-            <div className="space-y-3">
-              <div className="flex items-center space-x-3">
-                <Phone className="w-4 h-4" />
-                <a href="tel:+17652279408" className="hover:opacity-80 transition-opacity">
-                  +1 765-227-9408
-                </a>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="w-4 h-4" />
-                <a href="mailto:haulboyzjunk24@gmail.com" className="hover:opacity-80 transition-opacity">
-                  haulboyzjunk24@gmail.com
-                </a>
-              </div>
-              <div className="flex items-center space-x-3">
-                <MapPin className="w-4 h-4" />
-                <span>Hamilton City, Indianapolis</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Social Links */}
-          <div className="space-y-4">
-            <h4 className="text-lg font-semibold">Follow Us</h4>
-            <div className="flex space-x-4">
-              <a href="#" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
-                <Facebook className="w-6 h-6 text-primary" />
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
-                <Instagram className="w-6 h-6 text-primary" />
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
-                <Twitter className="w-6 h-6 text-primary" />
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
-                <Linkedin className="w-6 h-6 text-primary" />
-              </a>
-            </div>
+    <footer className="bg-white text-blue-900 dark:bg-blue-900 dark:text-white border-t border-blue-200 dark:border-blue-700">
+      <div className="container mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-4 gap-8">
+        {/* Logo / Brand */}
+        <div className="flex flex-col space-y-4">
+          <h2 className="text-2xl font-bold">Haul Boyz</h2>
+          <p className="text-sm text-blue-700 dark:text-blue-300">
+            Professional junk removal services. Fast, reliable, eco-friendly.
+          </p>
+          <div className="flex space-x-4">
+            <a href="#" className="hover:text-blue-500"><FaFacebookF /></a>
+            <a href="#" className="hover:text-blue-500"><FaTwitter /></a>
+            <a href="#" className="hover:text-blue-500"><FaInstagram /></a>
           </div>
         </div>
 
-        <div className="border-t border-muted-foreground/30 mt-8 pt-8 text-center">
-          <p className="text-sm opacity-90">© 2025 Haul Boyz Junk Removal. All rights reserved. | We Clear It All!</p>
+        {/* Services */}
+        <div>
+          <h3 className="text-xl font-semibold mb-4">Our Services</h3>
+          <ul className="space-y-2 text-sm text-blue-700 dark:text-blue-300">
+            <li><a href="#services" className="hover:text-blue-500">Appliances Removal</a></li>
+            <li><a href="#services" className="hover:text-blue-500">Home Cleanout</a></li>
+            <li><a href="#services" className="hover:text-blue-500">Garage Cleanout</a></li>
+            <li><a href="#services" className="hover:text-blue-500">Yard Cleanup</a></li>
+          </ul>
         </div>
+
+        {/* About / Quick Links */}
+        <div>
+          <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
+          <ul className="space-y-2 text-sm text-blue-700 dark:text-blue-300">
+            <li><a href="#about" className="hover:text-blue-500">About Us</a></li>
+            <li><a href="#gallery" className="hover:text-blue-500">Gallery</a></li>
+            <li><a href="#testimonials" className="hover:text-blue-500">Testimonials</a></li>
+            <li><a href="#contact" className="hover:text-blue-500">Contact</a></li>
+          </ul>
+        </div>
+
+        {/* Contact */}
+        <div>
+          <h3 className="text-xl font-semibold mb-4">Contact</h3>
+          <p className="text-sm text-blue-700 dark:text-blue-300">123 Main Street, Hamilton City</p>
+          <p className="text-sm text-blue-700 dark:text-blue-300">Phone: (123) 456-7890</p>
+          <p className="text-sm text-blue-700 dark:text-blue-300">Email: info@haulboyz.com</p>
+        </div>
+      </div>
+
+      <div className="border-t border-blue-200 dark:border-blue-700 text-center py-4 text-sm text-blue-700 dark:text-blue-300">
+        &copy; {new Date().getFullYear()} Haul Boyz. All rights reserved.
       </div>
     </footer>
   )
