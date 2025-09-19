@@ -3,11 +3,15 @@
 import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react"
 
 export function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" })
+  }
+
   return (
     <footer className="bg-blue-900 text-white shadow-lg">
       <div className="container mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Company Name & About */}
-        <div className="flex flex-col gap-4 items-center md:items-start">
+        <div className="flex flex-col gap-4 items-center md:items-start cursor-pointer" onClick={scrollToTop}>
           <span className="text-black font-bold text-3xl md:text-4xl">
             Noor Al-Yaqeen Charity Foundation
           </span>
