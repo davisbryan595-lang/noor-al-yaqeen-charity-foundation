@@ -11,14 +11,20 @@ export function Navigation() {
   const navItems = [
     { href: "#about", label: "About" },
     { href: "#impact", label: "Impact" },
-    { href: "#donate", label: "Donate" },
   ]
+
+  const scrollToDonate = () => {
+    const donateSection = document.querySelector("#donate")
+    if (donateSection) {
+      donateSection.scrollIntoView({ behavior: "smooth" })
+    }
+  }
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20"> {/* taller navbar */}
-          
+
           {/* Logo + Name */}
           <div className="flex items-center gap-3">
             <Image
@@ -44,7 +50,7 @@ export function Navigation() {
                 {item.label}
               </a>
             ))}
-            <Button size="sm" className="ml-2">
+            <Button size="sm" className="ml-2" onClick={scrollToDonate}>
               Donate Now
             </Button>
           </div>
@@ -69,7 +75,7 @@ export function Navigation() {
                   {item.label}
                 </a>
               ))}
-              <Button size="sm" className="w-fit mt-2">
+              <Button size="sm" className="w-fit mt-2" onClick={() => { setIsOpen(false); scrollToDonate(); }}>
                 Donate Now
               </Button>
             </div>
