@@ -15,7 +15,7 @@ export function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center text-white pt-28">
         <div className="max-w-4xl mx-auto animate-fade-in-up">
           <div className="flex items-center justify-center gap-2 mb-6">
             <Heart className="h-6 w-6 text-red-500 fill-current" />
