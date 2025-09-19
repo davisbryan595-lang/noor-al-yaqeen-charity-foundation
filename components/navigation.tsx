@@ -19,15 +19,18 @@ export function Navigation() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20"> {/* taller navbar */}
           
-          {/* Logo */}
-          <div className="flex items-center">
+          {/* Logo + Name */}
+          <div className="flex items-center gap-3">
             <Image
               src="/logo.jpg"
-              alt="ShareTheMeal Logo"
-              width={70}  // bigger logo
-              height={70} // bigger logo
-              className="object-contain" // maintain aspect ratio
+              alt="Noor Al-Yaqeen Charity Foundation Logo"
+              width={70}
+              height={70}
+              className="object-contain"
             />
+            <span className="hidden md:block font-bold text-lg">
+              Noor Al-Yaqeen Charity Foundation
+            </span>
           </div>
 
           {/* Desktop Navigation */}
