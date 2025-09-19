@@ -17,7 +17,7 @@ export function AboutSection() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <img
-                src="/aboutdownload.jpg"
+                src="/about3.jpg"
                 alt="Families receiving emergency food assistance"
                 className="w-full h-80 object-cover rounded-lg"
               />
