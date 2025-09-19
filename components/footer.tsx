@@ -7,7 +7,6 @@ export function Footer() {
   return (
     <footer className="bg-blue-900 text-white shadow-lg">
       <div className="container mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
-        
         {/* Logo & About */}
         <div className="flex flex-col gap-4 items-center md:items-start">
           <Image
@@ -18,9 +17,8 @@ export function Footer() {
             className="object-contain"
           />
           <p className="text-blue-200 text-sm text-center md:text-left">
-            Noor Al-Yaqeen Charity Foundation is dedicated to empowering
-            communities through compassion, relief, and sustainable support
-            for those in need.
+            Noor Al-Yaqeen Charity Foundation is committed to serving the community with compassion, integrity, 
+            and impactful initiatives that bring real change.
           </p>
         </div>
 
@@ -30,8 +28,8 @@ export function Footer() {
           <ul className="space-y-2 text-blue-200 text-sm">
             <li><a href="#home" className="hover:text-white transition-colors">Home</a></li>
             <li><a href="#about" className="hover:text-white transition-colors">About Us</a></li>
-            <li><a href="#impact" className="hover:text-white transition-colors">Our Impact</a></li>
-            <li><a href="#donate" className="hover:text-white transition-colors">Donate</a></li>
+            <li><a href="#services" className="hover:text-white transition-colors">Services</a></li>
+            <li><a href="#gallery" className="hover:text-white transition-colors">Gallery</a></li>
             <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
           </ul>
         </div>
@@ -41,7 +39,17 @@ export function Footer() {
           <h3 className="text-2xl md:text-3xl font-bold mb-4">Contact</h3>
           <p className="text-blue-200 text-sm mb-2">📞 (123) 456-7890</p>
           <p className="text-blue-200 text-sm mb-2">📧 info@nooralyaqeen.org</p>
-          <p className="text-blue-200 text-sm">🏠 Your City, Your State</p>
+          <p className="text-blue-200 text-sm">
+            🏠 Noor Al-Yaqeen Charity Foundation <br />
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=1140+Burnhamthorpe+W+Rd,+137,+Mississauga,+Ontario,+Canada,+L5C0A3"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white underline transition-colors"
+            >
+              1140 Burnhamthorpe W Rd, 137, Mississauga, Ontario, Canada, L5C0A3
+            </a>
+          </p>
         </div>
 
         {/* Social */}
