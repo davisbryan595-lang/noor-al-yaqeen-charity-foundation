@@ -44,12 +44,12 @@ export function DonationModal({ isOpen, onClose }: DonationModalProps) {
   if (!isOpen) return null
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 overflow-auto">
-      <div className="bg-white dark:bg-gray-900 rounded-lg w-full max-w-2xl shadow-xl relative animate-fade-in-up">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4 overflow-auto">
+      <div className="bg-white dark:bg-gray-900 rounded-xl w-full max-w-xl shadow-xl relative animate-fade-in-up">
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-gray-500 hover:text-gray-900 dark:hover:text-white"
+          className="absolute top-3 right-3 text-gray-500 hover:text-gray-900 dark:hover:text-white"
         >
           <X className="w-6 h-6" />
         </button>
@@ -67,7 +67,7 @@ export function DonationModal({ isOpen, onClose }: DonationModalProps) {
             </CardContent>
           </Card>
         ) : (
-          <form onSubmit={handleSubmit} className="space-y-6 p-6">
+          <form onSubmit={handleSubmit} className="space-y-6 p-6 max-h-[80vh] overflow-y-auto">
             {/* Donation Amount */}
             <Card>
               <CardHeader>
