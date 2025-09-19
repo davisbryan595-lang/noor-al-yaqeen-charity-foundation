@@ -8,21 +8,21 @@ export function ImpactSection() {
       location: "Gaza",
       story:
         "Thanks to your support, my three children have nutritious meals every day. The food packages have been a lifeline for our family during these difficult times.",
-      image: "/middle-eastern-woman-with-children--warm-smile--fa.jpg",
+      image: "/impact1.jpg",
     },
     {
       name: "Ahmed Hassan",
       location: "West Bank",
       story:
         "As a father of five, I was struggling to provide for my family. The emergency food assistance has given us hope and the strength to keep going.",
-      image: "/middle-eastern-father-with-family--grateful-expres.jpg",
+      image: "/impact2.jpg",
     },
     {
       name: "Mariam Khalil",
       location: "Refugee Camp",
       story:
         "The fresh vegetables and nutritious food have helped my elderly parents maintain their health. We are so grateful for this support from people around the world.",
-      image: "/young-middle-eastern-woman-caring-for-elderly-pare.jpg",
+      image: "/impact3.jpg",
     },
   ]
 
