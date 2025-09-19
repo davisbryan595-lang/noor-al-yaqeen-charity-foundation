@@ -7,17 +7,20 @@ export function Footer() {
   return (
     <footer className="bg-blue-900 text-white shadow-lg">
       <div className="container mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+        
         {/* Logo & About */}
         <div className="flex flex-col gap-4 items-center md:items-start">
           <Image
             src="/logo.jpg"
-            alt="ShareTheMeal Logo"
-            width={100} // bigger logo
-            height={100} // bigger logo
+            alt="Noor Al-Yaqeen Charity Foundation Logo"
+            width={100}
+            height={100}
             className="object-contain"
           />
           <p className="text-blue-200 text-sm text-center md:text-left">
-            We provide professional services with a focus on quality and community impact. Fast, reliable, and ethical solutions for your needs.
+            Noor Al-Yaqeen Charity Foundation is dedicated to empowering
+            communities through compassion, relief, and sustainable support
+            for those in need.
           </p>
         </div>
 
@@ -27,8 +30,8 @@ export function Footer() {
           <ul className="space-y-2 text-blue-200 text-sm">
             <li><a href="#home" className="hover:text-white transition-colors">Home</a></li>
             <li><a href="#about" className="hover:text-white transition-colors">About Us</a></li>
-            <li><a href="#services" className="hover:text-white transition-colors">Services</a></li>
-            <li><a href="#gallery" className="hover:text-white transition-colors">Gallery</a></li>
+            <li><a href="#impact" className="hover:text-white transition-colors">Our Impact</a></li>
+            <li><a href="#donate" className="hover:text-white transition-colors">Donate</a></li>
             <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
           </ul>
         </div>
@@ -37,7 +40,7 @@ export function Footer() {
         <div>
           <h3 className="text-2xl md:text-3xl font-bold mb-4">Contact</h3>
           <p className="text-blue-200 text-sm mb-2">📞 (123) 456-7890</p>
-          <p className="text-blue-200 text-sm mb-2">📧 info@sharethemeal.com</p>
+          <p className="text-blue-200 text-sm mb-2">📧 info@nooralyaqeen.org</p>
           <p className="text-blue-200 text-sm">🏠 Your City, Your State</p>
         </div>
 
@@ -63,7 +66,7 @@ export function Footer() {
 
       {/* Bottom */}
       <div className="border-t border-blue-800 mt-8 py-4 text-center text-blue-200 text-sm">
-        &copy; {new Date().getFullYear()} ShareTheMeal. All rights reserved.
+        &copy; {new Date().getFullYear()} Noor Al-Yaqeen Charity Foundation. All rights reserved.
       </div>
     </footer>
   )
