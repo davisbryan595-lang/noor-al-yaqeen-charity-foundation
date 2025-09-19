@@ -33,7 +33,7 @@ export function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
               as="a"
-              href="#donationsection"
+              href="#donate"
               size="lg"
               className="text-lg px-8 py-4 bg-primary hover:bg-primary/90"
             >
@@ -43,7 +43,7 @@ export function HeroSection() {
 
             <Button
               as="a"
-              href="#aboutsection"
+              href="#about"
               variant="outline"
               size="lg"
               className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-black bg-transparent"
