@@ -12,9 +12,9 @@ export function Footer() {
           <Image
             src="/logo.jpg"
             alt="ShareTheMeal Logo"
-            width={80} // Increased size
-            height={80} // Increased size
-            className="rounded-full"
+            width={100} // bigger logo
+            height={100} // bigger logo
+            className="object-contain"
           />
           <p className="text-blue-200 text-sm text-center md:text-left">
             We provide professional services with a focus on quality and community impact. Fast, reliable, and ethical solutions for your needs.
@@ -25,21 +25,11 @@ export function Footer() {
         <div>
           <h3 className="text-2xl md:text-3xl font-bold mb-4">Quick Links</h3>
           <ul className="space-y-2 text-blue-200 text-sm">
-            <li>
-              <a href="#home" className="hover:text-white transition-colors">Home</a>
-            </li>
-            <li>
-              <a href="#about" className="hover:text-white transition-colors">About Us</a>
-            </li>
-            <li>
-              <a href="#services" className="hover:text-white transition-colors">Services</a>
-            </li>
-            <li>
-              <a href="#gallery" className="hover:text-white transition-colors">Gallery</a>
-            </li>
-            <li>
-              <a href="#contact" className="hover:text-white transition-colors">Contact</a>
-            </li>
+            <li><a href="#home" className="hover:text-white transition-colors">Home</a></li>
+            <li><a href="#about" className="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="#services" className="hover:text-white transition-colors">Services</a></li>
+            <li><a href="#gallery" className="hover:text-white transition-colors">Gallery</a></li>
+            <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
           </ul>
         </div>
 
