@@ -17,8 +17,8 @@ export function AboutSection() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <img
-                src="/placeholder-8h883.png"
-                alt="Families receiving aid"
+                src="/aboutpic.jpg"
+                alt="Families receiving emergency food assistance"
                 className="w-full h-80 object-cover rounded-lg"
               />
             </div>
@@ -62,7 +62,9 @@ export function AboutSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold mb-1">Immediate Response</h4>
-                    <p className="text-sm text-muted-foreground">Food packages delivered within 48 hours of donation</p>
+                    <p className="text-sm text-muted-foreground">
+                      Food packages delivered within 48 hours of donation
+                    </p>
                   </div>
                 </div>
               </div>
