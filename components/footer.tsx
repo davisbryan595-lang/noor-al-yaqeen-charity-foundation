@@ -1,21 +1,16 @@
 "use client"
 
-import Image from "next/image"
 import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react"
 
 export function Footer() {
   return (
     <footer className="bg-blue-900 text-white shadow-lg">
       <div className="container mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
-        {/* Logo & About */}
+        {/* Company Name & About */}
         <div className="flex flex-col gap-4 items-center md:items-start">
-          <Image
-            src="/logo.jpg"
-            alt="Noor Al-Yaqeen Charity Foundation Logo"
-            width={100}
-            height={100}
-            className="object-contain"
-          />
+          <span className="text-black font-bold text-3xl md:text-4xl">
+            Noor Al-Yaqeen Charity Foundation
+          </span>
           <p className="text-blue-200 text-sm text-center md:text-left">
             Noor Al-Yaqeen Charity Foundation is committed to serving the community with compassion, integrity, 
             and impactful initiatives that bring real change.
