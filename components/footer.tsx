@@ -1,14 +1,24 @@
 "use client"
 
+import Image from "next/image"
 import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react"
 
 export function Footer() {
   return (
     <footer className="bg-blue-900 text-white shadow-lg">
       <div className="container mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
-        {/* About */}
-        <div>
-          <h3 className="text-2xl md:text-3xl font-bold mb-4">Your Brand</h3>
+        {/* Logo & About */}
+        <div className="flex flex-col gap-4">
+          <div className="flex items-center gap-3">
+            <Image
+              src="/logo.jpg"
+              alt="Logo"
+              width={40}
+              height={40}
+              className="rounded-full"
+            />
+            <span className="text-xl md:text-2xl font-bold">ShareTheMeal</span>
+          </div>
           <p className="text-blue-200 text-sm">
             We provide professional services with a focus on quality and community impact. Fast, reliable, and ethical solutions for your needs.
           </p>
@@ -40,7 +50,7 @@ export function Footer() {
         <div>
           <h3 className="text-2xl md:text-3xl font-bold mb-4">Contact</h3>
           <p className="text-blue-200 text-sm mb-2">📞 (123) 456-7890</p>
-          <p className="text-blue-200 text-sm mb-2">📧 info@yourbrand.com</p>
+          <p className="text-blue-200 text-sm mb-2">📧 info@sharethemeal.com</p>
           <p className="text-blue-200 text-sm">🏠 Your City, Your State</p>
         </div>
 
@@ -66,7 +76,7 @@ export function Footer() {
 
       {/* Bottom */}
       <div className="border-t border-blue-800 mt-8 py-4 text-center text-blue-200 text-sm">
-        &copy; {new Date().getFullYear()} Your Brand. All rights reserved.
+        &copy; {new Date().getFullYear()} ShareTheMeal. All rights reserved.
       </div>
     </footer>
   )
