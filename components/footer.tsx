@@ -8,18 +8,15 @@ export function Footer() {
     <footer className="bg-blue-900 text-white shadow-lg">
       <div className="container mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Logo & About */}
-        <div className="flex flex-col gap-4">
-          <div className="flex items-center gap-3">
-            <Image
-              src="/logo.jpg"
-              alt="Logo"
-              width={40}
-              height={40}
-              className="rounded-full"
-            />
-            <span className="text-xl md:text-2xl font-bold">ShareTheMeal</span>
-          </div>
-          <p className="text-blue-200 text-sm">
+        <div className="flex flex-col gap-4 items-center md:items-start">
+          <Image
+            src="/logo.jpg"
+            alt="ShareTheMeal Logo"
+            width={80} // Increased size
+            height={80} // Increased size
+            className="rounded-full"
+          />
+          <p className="text-blue-200 text-sm text-center md:text-left">
             We provide professional services with a focus on quality and community impact. Fast, reliable, and ethical solutions for your needs.
           </p>
         </div>
