@@ -1,3 +1,5 @@
+"use client"
+
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Quote, ArrowRight } from "lucide-react"
@@ -46,6 +48,7 @@ export function ImpactSection() {
             </p>
           </div>
 
+          {/* Stories Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {stories.map((story, index) => (
               <Card key={index} className="h-full">
@@ -74,6 +77,7 @@ export function ImpactSection() {
             ))}
           </div>
 
+          {/* Stats + Donate Button */}
           <div className="mt-16 text-center">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
               <div>
@@ -94,7 +98,7 @@ export function ImpactSection() {
               </div>
             </div>
 
-            {/* Donate Button */}
+            {/* Donate Button -> Scrolls to Donation Section */}
             <Button
               size="lg"
               className="w-full sm:w-auto min-w-[340px] text-xl px-20 py-6 bg-primary hover:bg-primary/90 font-semibold"

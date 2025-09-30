@@ -46,6 +46,7 @@ export function HeroSection() {
             Every meal shared brings hope. Join thousands of people providing essential nutrition to families in need.
           </p>
 
+          {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
               size="lg"
@@ -68,6 +69,7 @@ export function HeroSection() {
             </Button>
           </div>
 
+          {/* Stats */}
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
               <div className="text-3xl font-bold text-accent">2.3M</div>
