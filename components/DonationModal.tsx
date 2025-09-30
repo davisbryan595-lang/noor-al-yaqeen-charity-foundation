@@ -27,10 +27,10 @@ export function DonationModal({ isOpen, onClose }: DonationModalProps) {
   })
 
   const presetAmounts = [
-    { value: "25", meals: "10 meals" },
-    { value: "50", meals: "20 meals" },
-    { value: "100", meals: "40 meals" },
-    { value: "250", meals: "100 meals" },
+    { value: "25" },
+    { value: "50"},
+    { value: "100"},
+    { value: "250"},
   ]
 
   const selectedAmount = amount === "custom" ? customAmount : amount
