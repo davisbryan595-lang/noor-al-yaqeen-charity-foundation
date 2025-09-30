@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { Quote } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { Quote, ArrowRight } from "lucide-react"
 
 export function ImpactSection() {
   const stories = [
@@ -25,6 +26,13 @@ export function ImpactSection() {
       image: "/impact3.jpg",
     },
   ]
+
+  const scrollToDonate = () => {
+    const donateSection = document.querySelector("#donate")
+    if (donateSection) {
+      donateSection.scrollIntoView({ behavior: "smooth" })
+    }
+  }
 
   return (
     <section id="impact" className="py-16 bg-muted/30">
@@ -67,7 +75,7 @@ export function ImpactSection() {
           </div>
 
           <div className="mt-16 text-center">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
               <div>
                 <div className="text-3xl font-bold text-primary mb-2">2.3M</div>
                 <div className="text-sm text-muted-foreground">Meals Delivered</div>
@@ -85,6 +93,18 @@ export function ImpactSection() {
                 <div className="text-sm text-muted-foreground">Operations</div>
               </div>
             </div>
+
+            {/* Donate Button */}
+            <Button
+              size="lg"
+              className="w-full sm:w-auto min-w-[340px] text-xl px-20 py-6 bg-primary hover:bg-primary/90 font-semibold"
+              onClick={scrollToDonate}
+            >
+              <span className="w-full flex items-center justify-between">
+                <span className="flex-1 text-center">Donate Now</span>
+                <ArrowRight className="h-6 w-6 ml-4 flex-shrink-0" />
+              </span>
+            </Button>
           </div>
         </div>
       </div>
