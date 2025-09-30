@@ -27,20 +27,17 @@ export function Navigation() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20"> {/* taller navbar */}
-
-          {/* Logo + Name */}
+        <div className="flex items-center justify-between h-20">
+          {/* Logo + Arabic Name */}
           <div className="flex items-center gap-3 cursor-pointer" onClick={scrollToTop}>
             <Image
               src="/logo.jpg"
               alt="Noor Al-Yaqeen Charity Foundation Logo"
-              width={70}
-              height={70}
-              className="object-contain"
+              width={50} // smaller for mobile
+              height={50}
+              className="object-contain md:w-[70px] md:h-[70px]"
             />
-            <span className="hidden md:block font-bold text-lg">
-              Noor Al-Yaqeen Charity Foundation
-            </span>
+            <span className="font-bold text-lg">مؤسسة نور اليقين</span>
           </div>
 
           {/* Desktop Navigation */}
