@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 
@@ -28,16 +27,14 @@ export function Navigation() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          {/* Logo + Arabic Name */}
-          <div className="flex items-center gap-3 cursor-pointer" onClick={scrollToTop}>
-            <Image
-              src="/logo.jpg"
-              alt="Noor Al-Yaqeen Charity Foundation Logo"
-              width={50} // smaller for mobile
-              height={50}
-              className="object-contain md:w-[70px] md:h-[70px]"
-            />
-            <span className="font-bold text-lg">مؤسسة نور اليقين</span>
+          {/* Arabic Title with Effect */}
+          <div
+            className="cursor-pointer"
+            onClick={scrollToTop}
+          >
+            <span className="font-extrabold text-xl md:text-2xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent animate-text-glow">
+              مؤسسة نور اليقين
+            </span>
           </div>
 
           {/* Desktop Navigation */}
