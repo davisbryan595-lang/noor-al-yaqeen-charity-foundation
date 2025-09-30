@@ -49,11 +49,11 @@ export function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
               size="lg"
-              className="text-lg px-8 py-4 bg-primary hover:bg-primary/90"
+              className="w-full sm:w-auto min-w-[220px] text-xl px-12 py-6 bg-primary hover:bg-primary/90 font-semibold"
               onClick={scrollToDonate}
             >
               Donate Now
-              <ArrowRight className="ml-2 h-5 w-5" />
+              <ArrowRight className="ml-2 h-6 w-6" />
             </Button>
 
             <Button
